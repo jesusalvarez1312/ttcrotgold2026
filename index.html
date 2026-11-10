@@ -43,7 +43,7 @@ th{color:#5a6e8f!important}td,th{border-top:1px solid #e6edf8!important}
 <svg id="f" viewBox="-8.5 -8 17 17"></svg>
 <div class="read"><button class="nav" id="pv" aria-label="voriges Bild">‹</button><div class="mid"><div id="tm"></div><div id="bn"></div></div><button class="nav" id="nx" aria-label="nächstes Bild">›</button></div>
 <div class="ctl"><button id="pl">▶</button><input id="sl" type="range" min="0" max="2395" value="0"><button id="sp">1×</button></div>
-<div class="opts"><label><input type="checkbox" id="tr" checked> Wege anzeigen</label><label id="ghL" style="display:none"><input type="checkbox" id="gh"> Ideal zum Vergleich</label></div>
+<div class="opts"><label><input type="checkbox" id="tr"> Wege anzeigen</label><label id="ghL" style="display:none"><input type="checkbox" id="gh"> Ideal zum Vergleich</label></div>
 <p class="note" id="nt"></p>
 <div id="acc"></div>
 </main>
@@ -135,5 +135,5 @@ SEC.forEach((sec,si)=>{const d=document.createElement('details');
   h+='</table></div>'});
  d.innerHTML=h;acc.appendChild(d)});
 acc.querySelectorAll('button[data-go]').forEach(b=>b.onclick=()=>{stop();set(+b.dataset.go*10);window.scrollTo({top:0,behavior:'smooth'})});
-setMode('I');
+setMode('I');gT.style.display='none';
 </script></body></html>
